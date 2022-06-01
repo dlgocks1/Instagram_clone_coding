@@ -1,8 +1,24 @@
-const $rightSection = document.querySelector(".mainRightSection")
-const $rightSection2 = document.getElementsByClassName("mainRightSection")
 
-// $rightSection.style
+import MainContainer from './modules/MainContainer.js'
+import Nav from './modules/Nav.js'
 
-// $rightSection2.style.left = 50+"px"
-$rightSection2[0].clientLeft = "50px"
-console.dir($rightSection)
+// const express = require('express');
+// const app = express();
+// const port = 3100;
+
+const App = () => {
+    return `
+        ${Nav()}
+        ${MainContainer()}
+    `
+}
+
+document.getElementById('root').innerHTML = App();
+
+// app.get('/', (req, res) => {
+//   res.send(App)
+// })
+
+// app.listen(port, () => {
+//   console.log(`Example app listening on port ${port}`)
+// })

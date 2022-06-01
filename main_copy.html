@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div id = "root"></div>
+    <!-- 메인 화면 모듈화 -->
+    <!-- <script type="module" src="./app.js"></script> -->
+    <script type="module" src="./main.js"></script>
+    <!-- 창크기 변화에 따른 JQuery -->
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        function open_chatroom(){
+            var windowWidth = $( window ).width();
+            if(windowWidth < 1000) {
+                $(".mainRightSection").css("display","hidden")
+                $(".mainRightSection").hide();
+            } else {
+                $(".mainRightSection").show();
+                $(".mainRightSection").offset({left:(windowWidth/2+170)})
+            }
+        }
+        $( window ).resize(function() {
+            //창크기 변화 감지
+            open_chatroom();
+        });
+        open_chatroom();
+    </script>
+</body>
+</html>
