@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <script src="/js/register/register.js" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="/js/register/register.css">
+</head>
+
+<body>
+    <div class="Container flex">
+
+
+        <div class="ContainerLogin flex">
+            <div class="mainloginContainer">
+                <div class="loginContainer">
+                    <div class="loginLogo flex">
+                        <img src="https://www.instagram.com/static/images/web/logged_out_wordmark.png/7a252de00b20.png">
+                    </div>
+
+                    <h2 class="vvzhL">친구들의 사진과 동영상을 보려면 가입하세요.</h2>
+                    <div class="facebookLogainContainer flex">
+                        <button class="facebookLoginbt">
+                            Facebook으로 로그인
+                        </button>
+                    </div>
+                    <div class="sliceContainer flex">
+                        <div class="slice"></div>
+                        <div class="tv-or">또는 </div>
+                        <div class="slice"></div>
+                    </div>
+                    <div class="inputMainContainer">
+                        <form id="register-form">
+                            <div class="inputContainer flex">
+                                <input id="id" class="maininputContainer" aria-label="임력 검색"
+                                    placeholder="전화번호, 사용자 이름 또는 이메일" type="text">
+                                </input>
+                            </div>
+                            <div class="inputContainer flex">
+                                <input id="name" class="maininputContainer" placeholder="성명" type="text">
+                                </input>
+                            </div>
+                            <div class="inputContainer flex">
+                                <input id="nickname" class="maininputContainer" placeholder="사용자 이름" type="text">
+                                </input>
+                            </div>
+                            <div class="inputContainer flex">
+                                <input id="password" type="password" class="maininputContainer" aria-label="임력 검색" placeholder="비밀번호"
+                                    type="text">
+                                </input>
+                            </div>
+                    </div>
+                    <p class="ZGwn1">서비스를 이용하는 사람이 회원님의 연락처 정보를 Instagram에 업로드했을 수도 있습니다. <a
+                            href="https://www.facebook.com/help/instagram/261704639352628" tabindex="0"
+                            target="_blank"></a></p>
+                    <div class="loginbtContainer flex">
+                        <button id="loginbt" type="submit">
+                            가입
+                        </button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- <script type="module" src="./signup.js"></script> -->
+</body>
+</html>
